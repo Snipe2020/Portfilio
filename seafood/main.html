@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>SeaSide Resto</title>
+                <link rel="stylesheet" href="main.css"></link>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Sea<span>Side</span></a>
+            <div class="menuToggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#reserve">Reservation</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </header>
+                 <!--HOME-->
+        <section class="banner" id="banner">
+            <div class="content">
+                <h2><span>Try our</span> Sea and Food</h2>
+                <p>Our SeaSide restaurant is so popular because of our delicious and satisfying foods.<br> Along with a beautiful view and nice ambiance.
+                <br><br> With this restaurant, we assure you that you will not regret it.   </p>
+                <a href="#menu" class="btn">Our Menu</a>  
+            </div>
+                </div>
+            </div>
+        </section>
+                <!--ABOUT-->
+        <section class="about" id="about">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text"><span>A</span>bout<span> U</span>s</h2>
+                    <br>
+                    <p>The SeaSide since 1970. It is Located at #123 Cabangan Road, San Narciso,
+                        Zambales, Philippines. For us, sustainability is not a lofty idea but a fundamental, and necessary, endeavor. <br><br>
+                        Our concept is about the food and drink of course, but it’s also about our team, our facilities, our practices, 
+                        and the hundreds of decisions we make each day that affect the world around us. We believe it’s about finding a balance,
+                        which allows us to sustain our quest of making quality, accessible food, while also giving back to our community and the environment.
+                        
+                         </p>
+                </div>
+                <div class="col">
+                    <div class="img">
+                        <img src="s.jpeg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu" id="menu">
+            <div class="title">
+                <h1 class="text"><span>O</span>ur<span> M</span> enu</h1>
+                <p>This are the best seller because of it's price. </p>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <div class="img">
+                        <img src="menu1.jpg">
+                    </div>
+                
+                        <div class="text">
+                            <p><span>Sea Salad</span>(₱300)</p>
+                        </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="menu2.jpg">
+                    </div>
+                
+                        <div class="text">
+                            <p><span>Spicy Mussels</span>(₱200)</p>
+                        </div>
+                    </div>
+                <div class="box">
+                    <div class="img">
+                            <img src="menu7.jpg">
+                    </div>
+                            <div class="text">
+                                <p><span>Special Salad</span> (₱250)</p>
+                            </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                            <img src="menu4.jpg">
+                    </div>
+                            <div class="text">
+                                <p><span>Butter Lobster</span> (₱400)</p>
+                            </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                            <img src="menu5.jpg">
+                    </div>
+                            <div class="text">
+                                <p><span>Shrimp Salad</span> (₱200)</p>
+                            </div>
+                </div>
+            </div>
+        </section>
+        <!--Contact-->
+        <section class="contact" id="contact">
+            <div class="contactform">
+            <div class="title">
+                <h2 class="text"><span>C</span>ontact <span>U</span>s</h2>
+            </div>
+            <div id="error_message">
+           
+            </div>
+                
+                <form action="" id="myform" onsubmit = "return validate();">
+                <div class="field">
+                    <input type="text" placeholder="Name" id="name">
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="Email" id="email">
+                </div>
+                <div class="field">
+                    <textarea placeholder="Message.." id="message"></textarea>
+                </div>
+
+                <div class="btn2">
+                    <input type="submit">
+            </div>
+        </form>
+    </div>
+        </section>
+        <!--Reserve-->
+        <section class = "reserve" id="reserve">
+            <h2>BOOK YOUR TABLE NOW</h2>
+            <div class = "card-container">
+                <div class = "card-img">
+                
+                </div>
+
+                <div class = "card-content">
+                    <h3>Reservation</h3>
+                    <form>
+                        <div class = "form-row">
+                            <select name = "days">
+                                <option value = "day-select">Select Day</option>
+                                <option value = "sunday">Sunday</option>
+                                <option value = "monday">Monday</option>
+                                <option value = "tuesday">Tuesday</option>
+                                <option value = "wednesday">Wednesday</option>
+                                <option value = "thursday">Thursday</option>
+                                <option value = "friday">Friday</option>
+                                <option value = "saturday">Saturday</option>
+                            </select>
+
+                            <select name = "hours">
+                                <option value = "hour-select">Select Hour</option>
+                                <option value = "10">10: 00am</option>
+                                <option value = "10">12: 00pm</option>
+                                <option value = "10">1: 00pm</option>
+                                <option value = "10">2: 00pm</option>
+                                <option value = "10">3: 00pm</option>
+                                <option value = "10">4: 00pm</option>
+                                <option value = "10">5: 00pm</option>
+                            </select>
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "text" placeholder="Full Name">
+                            <input type = "text" placeholder="Phone Number">
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "number" placeholder="How Many Persons?" min = "1">
+                            <input type = "submit" value = "BOOK TABLE">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--Order-->
+        <section class="order" id="order">
+            <div class="title">
+        <h2>Place your Order</h2>
+        <h1> PUT YOUR ORDER HERE!</h1>
+           </div>
+            <div class="container">
+            
+              <div class="orderform">
+
+                <div class="ta">
+                    <label for="fname">Name</label>
+                    <input type="text" id="fname" name="fullname" placeholder="Your Name..">
+                </div>
+                    
+            <div class="ta">
+                <label for="no.">Phone Number</label>
+                <input type="text" id="no." name="number" placeholder="Your Number..">
+            </div>
+                    <br>
+            <div class="ta">
+                <label for="country">Location</label>
+                <select id="country" name="country">
+                    <br>
+                  <option value="o">Olongapo</option>
+                  <option value="z">Zubic</option>
+                  <option value="i">Iba</option>
+                    <option value="m">Masinloc</option>
+                    <option value="b">Botolan</option>
+                    <option value="sa">San Antonio</option>
+                    <option value="sf">San Felipe</option>
+                    
+                </select>
+            </div>
+              <div class="ta">
+                <textarea placeholder="Write your order..." ></textarea>
+              </div>    
+              <a href="#" class="btn3">Submit</a>
+            </div>
+              </form>
+            </div>
+            </section>
+         
+            
+
+            <!-- footer -->
+    <footer class = "footer section-py">
+        <div class = "footer-wrapper container">
+          <div class = "footer-item">
+            <h3>Find us</h3>
+            <p class = "para-text">#123 Cabangan Road, San Narciso, <br>Zambales, Philippines</p>
+          </div>
+  
+          <div class = "footer-item">
+            <h3>Reservation</h3>
+            <p class = "para-text">0912-3456-789 || 0998-7654-321</p>
+            <p class = "para-text">SeaSide@company.com</p>
+            <p class = "para-text">LINE: SeaSide383</p>
+          </div>
+  
+          <div class = "footer-item">
+            <h3>Open Hours</h3>
+            <p class = "para-text">Monday: Closed</p>
+            <p>Tuesday to Friday</p>
+            <p class = "para-text">7:00 AM - 9:00 PM</p>
+            <p>Saturday to Sunday</p>
+            <p class = "para-text">11:00 AM - 10:00 PM</p>
+          </div>
+  
+          <div class = "footer-item">
+           
+            <p class = "para-text">Copyright 2020 &copy; SeaSide</p>
+            <p class = "para-text">All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+      <!--- end of footer -->
+        <script src="main.js"> </script>
+    </body>
+</html>
