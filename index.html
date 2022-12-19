@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="header-text">
+            
+            <h1> <span>Hi!</span> I'm Erwin B. Eugenio. <br> A web <span>developer</span>. </h1>
+            <br>
+            <p> I'm from Nueva Ecija, Philippines. I'm 22 years old and currently studying at Central Luzon <br>State University
+                with the course of Bachelor of Science in Information Technology. 
+                <br>I'm a fourth year student with a major in system development. </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('contactme')">Contact Me</p>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>College:</span><br>Central Luzon State University</li>
+                        <li><span>High School (Senior):</span><br>STI College San Jose (with academic honor)</li>
+                        <li><span>High School (Junior):</span><br>Muñoz National High School (with academic honor)</li>
+                        <li><span>Elementary:</span><br>San Antonio Integrated School (with academic honor)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="contactme">
+                    <ul>
+                        <li><span>Mobile Number:</span><br>(+63) 955 9455 239</li>
+                        <li><span>Facebook:</span><br><a href="https://www.facebook.com/erwin.eugenio.16?mibextid=ZbWKwL">Erwin B. Eugenio</a></li>
+                        <li><span>Instagram:</span><br><a href="https://www.instagram.com/erwin.eugenio/">Erwin B. Eugenio</a></li>
+                        <li><span>Email:</span><br>erwineugenio2020@gmail.com</li>
+                    </ul>
+                </div>
+               
+        </div>
+        <a href="Resume.pdf" download class="btn btn2">Download CV</a>
+    </div>
+   <!------------skills------------>
+   <div id="skills">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skills-list">
+            <div class="left">
+                <h2><span>Web development</span></h2>
+                <p>As a web developer I can work under pressure and ensure that the website is well designed and functioning properly.
+                    I am able to develop ideas and processes and clearly express them.
+                </p>
+            </div>
+            <div class="right">
+            <h2><span>Mobile app development</span></h2>
+                <p>Create high-performance, reusable, and dependable Java code, including UI and core functions.
+                   I have some experience with mobile app development, but I am eager to learn more and get more experience with it.  </p>
+            </div>
+        </div>
+    </div>
+   </div>
+
+   
+   <!------------accomplishments------------>
+    <div id="accomplishments">
+        <div class="container">
+            <h1 class="sub-title">My Accomplishments</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="docs/aws.png">
+                    <div class="layer">
+                        <h3>AWS Graduate</h3>
+                        <p>This course is a 20 hours course and it is divived into 3 sessions. We do classes in 3 consecutive saturdays.</p>
+                        <br>
+                        <button><a href="https://www.credly.com/badges/0fc89a71-727a-4119-b4f0-e3634f007f29/print" class="button"><span>Bosit</span></a></button>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="docs/aws.png">
+                    <div class="layer">
+                    <h3>AWS Graduate</h3>
+                        <p>This course is a 20 hours course and it is divived into 3 sessions. We do classes in 3 consecutive saturdays.</p>
+                        <br>
+                        <button><a href="Resume.pdf" class="button"><span>Bosit</span></a></button>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="docs/aws.png">
+                    <div class="layer">
+                    <h3>AWS Graduate</h3>
+                        <p>This course is a 20 hours course and it is divived into 3 sessions. We do classes in 3 consecutive saturdays.</p>
+                        <br>
+                        <button><a href="Resume.pdf" class="button"><span>Bosit</span></a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
